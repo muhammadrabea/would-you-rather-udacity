@@ -28,9 +28,6 @@ class Poll extends Component {
         this.setState(() => ({
             viewAnswer: true
         }))
-        console.log('qid:', qid)
-        console.log('answer:', answer)
-        console.log('authedUser:', authedUser)
     }
     render () {
         const { question, user, questionId } = this.props
