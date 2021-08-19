@@ -9,10 +9,8 @@ import { handleInitialData } from '../actions/shared';
 import Navigation from './Navigation';
 import HomePage from './HomePage';
 import NewQuestion from './NewQuestion';
-import Poll from './Poll';
 import LogIn from './LogIn';
 import LeaderboardContainer from './LeaderboardContainer';
-import PollResault from './PollResault';
 import Error from './Error'
 import ViewQuestion from './viewQuestion';
 
@@ -34,7 +32,6 @@ class App extends Component {
                     <Route path ='/home' exact component={HomePage}/>
                     <Route path ='/add'  exact component={NewQuestion}/>
                     <Route path='/questions/:id' exact component={ViewQuestion} />
-                    <Route path='/resaults/:id' exact component={PollResault} />
                     <Route path='/leaderboard' exact component={LeaderboardContainer} /> 
                     <Route path ='/error' exact component={Error}/>
                   </Switch>
