@@ -6,7 +6,7 @@ import Error from './Error'
 class ViewQuestion extends Component {
 
     render () {
-        const {questionId, answersIds, viewPoll} = this.props   
+        const {questionId, answersIds} = this.props   
         if ( answersIds.hasOwnProperty(questionId) === false ) {
             return <Poll id={questionId} />
         } else if ( answersIds.hasOwnProperty(questionId) === true ) {
